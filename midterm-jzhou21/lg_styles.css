@@ -1,0 +1,276 @@
+﻿@charset "utf-8";
+
+/*   Filename: lg_styles3.css*/
+
+
+/* =============================================
+   Base styles and mobile styles: up to 480px
+   =============================================
+*/
+
+
+/* HTML and Body Styles */
+
+   
+
+html {
+   background: url(yx_back1.png) center center / cover no-repeat fixed, rgb(134,176,232);
+   height: 100%;
+   font-family: 'Indie Flower', cursive;
+   font-size: 20px;
+}
+
+body {
+   width: 100%;
+   max-width: 1024px;
+   margin: 0px auto;
+}
+   
+/* Body Header Styles */
+
+body > header {
+   background: rgb(134,176,232)  ;
+}
+
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+/* Horizonal Navigation Styles */
+
+nav.horizontal {
+   background-color: rgb(117, 140, 72);
+   clear: both;
+}
+
+nav.horizontal li {list-style-type:none;
+                   text-decoration: none;
+                   color: rgb(31, 73, 125);
+                   font-size: 1.15em;
+                   line-height: 2em;
+   
+}
+
+
+
+nav.horizontal ul li a {
+        display: block;
+        text-align: center;
+        font-size: 1.15em;
+    }
+
+
+nav.horizontal ul li a#currentPage {
+   background-color: rgb(31, 73, 125);
+   color: rgb(231, 231, 231);
+}
+
+nav.horizontal ul li a:visited, nav.horizontal ul li a:link {
+   color: rgb(231, 231, 231);
+}
+
+nav.horizontal ul li a:hover, nav.horizontal ul li a:active {
+   background-color: rgb(31, 73, 125);
+   color: rgb(231, 231, 231);
+}
+
+ul.submenu{display: none;}
+
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+display: block;}
+
+a#navicon {
+    display: none;
+}
+
+/* Section Styles */
+
+body > section#main {
+   background: rgb(231, 231, 231);
+   padding: 20px;
+}
+
+body > section#main > h1 {
+   font-size: 2.5em;
+   line-height: 1.4;
+}
+
+body > section#main ul {
+   list-style-type: disc;
+   line-height: 1.4;
+   padding-left: 40px;
+}
+
+/* Article Styles */
+
+ article > h1 {
+   font-size: 2em;
+   line-height: 1.4;
+   margin: 15px 0px;
+}
+
+body > section > article > h2 {
+   font-size: 1.5em;
+   line-height: 1.4;
+}
+
+body > section> article > p {
+   margin: 15px 0px;
+}
+
+body > section#main > article:nth-of-type(n+2) {
+   border-top: 4px solid rgb(121, 121, 121);
+}
+
+body > section#main > article img {
+   border: 1px solid rgb(151, 151, 151);
+   display: block;
+   margin: 10px auto;
+   width: 90%;
+}
+
+/* Footer Styles */
+
+body > footer {
+   background-color: rgb(117, 140, 72);
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
+/* General Flex Styles */
+
+body {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+body > header, body > footer {
+   width: 100%;
+}
+
+body > section#main {
+   -webkit-flex: 5 1 301px;
+   flex: 5 1 301px;
+}
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+   /* Navigation styles */
+
+   nav.horizontal a {
+font-size: 0.5em;
+line-height: 1em;}
+   
+   nav.horizontal ul li a {
+      text-align: left;
+      text-indent: 10px;
+   }
+
+    
+    nav.horizontal ul {
+        display: none;
+    }
+
+    a#navicon {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+   
+   a#navicon:hover+ul, nav.horizontal ul:hover {
+      display: block;
+   }
+}
+
+/* ===============================
+   Tablet Devices: 481px to 768px 
+   ===============================
+*/
+
+@media only screen and (min-width: 481px) {
+
+   
+
+   
+   /* Article H1 Styles */
+   
+   section#main > h1 {
+      color: rgb(207, 222, 172);
+      font-size: 2.5em;
+      letter-spacing: 0.2em;
+      margin-bottom: 40px;
+      text-shadow: black 2px 2px 4px;
+   }
+   footer {text-align:center;}
+
+
+   /* Navigation Styles */
+   
+   nav.horizontal li { display:inline;
+      font-size: 1.2em;
+   }
+
+    nav ul.submenu {
+        display: none;
+    }
+
+
+        /* Tablet Flex Styles */
+        nav .horizontal ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+   }
+   
+   nav.horizontal li {
+      -webkit-flex: 1 1 auto;
+      flex: 1 1 auto;
+   }
+   
+
+   /* Image Styles */
+   body > section#main > article img {
+      box-shadow: 3px 3px 10px rgb(151, 151, 151);
+      display: block;
+      float: right;
+      margin: 0px 20px 20px 20px;
+      width: 60%;
+   }
+}
+
+/* ===============================
+   Desktop Devices: 769px and wider
+   ===============================
+*/
+
+@media only screen and (min-width: 769px) {
+
+   /* HTML and Body Styles */
+   
+   html {
+      background: url(tf_back1.png) center center / cover no-repeat fixed;
+   }
+   
+   body {
+      width: 90%;
+      max-width: 1024px;
+      margin: 0px auto;
+   }
+nav.horizontal ul li a {
+      text-align: left;
+      text-indent: 10px;
+   }
+
+
+footer{text-align: center;}
+}

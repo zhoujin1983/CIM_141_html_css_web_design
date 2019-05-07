@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+
+/* Transition Styles */
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 0em;    
+    transition: color 1.5s ease-in 0.5s, font-size 2s ease, letter-spacing 2s ease-out, text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+}
+
+    nav ul li a:hover {
+        color: rgb(255, 183, 25);
+        font-size: 3em;
+        letter-spacing: 0.1em;
+        text-shadow: rgba(0, 0, 0, 0.5) 15px -3px 8px;
+    }
+
+article h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 0em;
+    text-shadow: rgba(0, 0, 0, 1) 1px -1px 1px;    
+}
+
+article h1 {
+    position: relative;
+    animation: mymove 5s infinite;
+    color: rgb(255, 183, 25);
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: rgba(0, 0, 0, 0.5) 15px -3px 8px;
+}
+/*Keyframes style*/
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 25px;
+    }
+}

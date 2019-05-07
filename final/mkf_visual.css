@@ -1,0 +1,7 @@
+﻿@charset "utf-8";
+
+figure img {
+    display: block;
+    width: 95%;
+    height: 250px;
+}

@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 1
+   Tutorial Case
+   Filename: ct_layout2.css
+
+   This file contains the layout styles used in the Curbside Thai website
+
+*/
+
+/* =============================================
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+   =============================================
+*/
+/* ===============================
+Mobile Styles: 0px to 480px
+===============================
+*/
+@media only screen and (max-width: 480px) {
+
+nav.horizontal a{font-size:1.5em;}
+
+
+
+html {
+	height: 100%;
+	font-size: 14px;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+}
+
+ul.mainmenu > li {float: left; width: 100%;}
+
+ul.submenu{width: 200%;}
+
+article {width: 100%; font-size:10px;display: flex;
+	
+}
+
+nav ul li {
+	font-family: 'Indie Flower', cursive;
+	font-size: 0.8em;
+}
+
+nav ul li a {
+	color: #222;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 8%;
+}
+nav ul li a:visited {
+	color: #222;
+}
+nav ul li a:hover {
+	background-color: #222;
+	color: white;
+}
+
+
+
+
+
+
+
+body h1 {
+	margin: 1%;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.5em;
+}
+body article h1 {
+	margin: 1%;
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;}
+
+
+body article p{font-family: 'Indie Flower', cursive; font-size:1.5em}
+
+header img {
+	float: none;
+	width: 96%;
+	margin: 2% 2% 0% 2%;
+}
+body p, body address {
+	margin: 3.5% 1%;
+	font-size: 1em;
+	font-family: 'Indie Flower', cursive;
+	font-style: normal;
+	height: 100%;
+}
+dl {
+	margin-left: 2%;
+	font-family: 'Indie Flower', cursive;
+}
+dt {
+	display: block;
+	margin: 0;
+	text-indent: 0;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(168, 168, 168,1.00);
+}
+dd {
+	display: block;
+	margin: 0 0 3% 3%;
+	text-indent: 0;
+}
+
+
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	
+	
+	font-family: 'Indie Flower', cursive;
+	
+}
+
+}
+
+/* =============================================
+	Tablet layout styles used by devices
+	481px to 768px and cascaded to larger 
+	devices.
+   =============================================
+*/
+
+
+@media only screen and (min-width: 481px) {
+html, body {
+	font-size: 16px;
+}
+
+body {
+	width: 89.9%;
+	padding-left: 1.55%;
+	padding-right: 1.55%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+header h1 {
+   font-size: 2.2em;
+}
+
+body article h1 {
+   font-size: 1.75em;
+}
+
+article {
+	width: 94%;
+	float: none;
+	margin: 0px auto;
+}
+
+dl {
+	width: 90%;
+    margin: 0 auto;
+	text-align: left;
+}
+article img {
+	float: right;
+	width: 40%;
+	margin: 0% 2% 2% 2%;
+}
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+nav ul li a {
+	margin-bottom: 0;
+}
+nav {
+	display: table;
+	width: 96%;
+	margin: 0 auto;
+	float: none;
+}
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+nav ul li:last-of-type {
+	margin-right: 0%;
+}
+
+
+
+
+footer {font-family: 'Indie Flower', cursive;
+	font-size: 0.9em;
+}
+}
+
+
+
+/* =============================================
+	Desktop layout styles used by  devices
+	769px and larger.
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+html, body {
+	font-size: 20px;
+}
+
+html {
+	background-color: rgba(176,124,48,1.00);
+	margin: 0px auto;
+}
+body {
+	width: 88.2%;
+	max-width: 900px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: 0px auto auto auto;
+	clear: none;
+	float: none;
+	background-color: white;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+
+}
